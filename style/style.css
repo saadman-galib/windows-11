@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../assets/images/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.taskbar{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 8px 0;
+    z-index: 225;
+
+}
+
+.taskbar img{
+    width: 30px;
+    margin: 0 8.8px;
+}
+
+.taskbar img:active{
+    transform: scale(0.80);
+    transition: 0.1s ease-in-out;
+}
+
+#taskbar-img-1{
+    width: 32px;
+}
+
+#taskbar-img-2{
+    transform: rotate(90deg);
+    width: 26px;
+    height: 26px;
+    margin-top: 5px;
+}
+
+#taskbar-img-2:active{
+    transform: rotate(90deg) scale(0.80);
+    transition: 0.1s ease-in-out;
+}
+
+.taskbar img:nth-child(4){
+    width: 24px;
+    height: 22px;
+    margin-top: 8px;
+}
+
+.taskbar img:nth-child(5){
+    margin-top: 4px;
+    width: 32px;
+    height: 32px;
+}
+
+.taskbar img:nth-child(6){
+    width: 24px;
+    height: 24px;
+    margin-top: 6px;
+}
+
+.taskbar img:nth-child(7){
+    width: 25px;
+    height: 25px;
+    margin-top: 6px;
+}
+
+.taskbar img:nth-child(8){
+    width: 24px;
+    height: 24px;
+    margin-top: 6px;
+}
+
+.taskbar-right img{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    transform: none !important;
+}
+
+.taskbar-right img:nth-child(1){
+    margin-right: 58px;
+    top: 0;
+    padding: 0;
+    margin-top: 2px;
+}
+
+.taskbar-right img:nth-child(2){
+    right: 0;
+    top: 0;
+    margin-top: 2px;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+}
+
+#startmenu-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.startmenu{
+    width: 630px;
+    height: 653px;
+    background: rgba(246,246,246,0.8);
+    backdrop-filter: saturate(180%) blur(100px);    
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -650px;
+    margin-left: auto;
+    transition: all 0.4s ease-in;
+}
+
+.startmenu-left-p{
+    padding: 45px 62px;
+    float: left;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.startmenu-right{
+    margin: 45px 62px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    box-shadow: 0 0 1px 1.2px #D9d9D9;
+    padding: 2px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.startmenu-right-i{
+    margin-left: 11px;
+    font-weight: light;
+    color: #777;
+}
+
+.app-container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-row: 3;
+    padding-top: 90px;
+    position: absolute;
+    width: 630px;
+    left: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.app{
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
+
+.app img{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 2px;
+
+}
+
+.app p{
+    font-size: 12px;
+}
+
+.recommended-heading{
+    margin-top: 320px;
+}
+
+.recommended-container{
+    padding-top:90px;
+    position: absolute;
+    width: 630px;
+    left: 0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: 400;
+}
+
+.recommend img{
+    float: left;
+    margin: 0 15px 0 65px;
+}
+
+.recommend:nth-child(2) img,
+.recommend:nth-child(4) img,
+.recommend:nth-child(6) img{
+    margin-left: 35px;
+}
+
+
+.recommend-text{
+    display:flex;
+    flex-direction: column;
+    float: left;
+}
+.recommend-text p{
+    text-align: left;
+}
+
+.user-container{
+    margin-top: 269px;
+    position: absolute;
+    width: 630px;
+    background-color: #D7DEF1;
+    backdrop-filter: saturate(180%) blur(10px);
+    height: 62px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+}
+
+.user-icon img{
+    border:none;
+    border-radius: 100%;
+    background-color: #E6E6E6;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 55px;
+}
+
+.shutdown img{
+    width: 15px;
+    height: 15px;
+    margin-right: 59px;
+    margin-top: 5px;
+}
+
+
+.shutdown{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.user-information{
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-information p{
+    font-size: 12px;
+    letter-spacing: .3px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: Helvetica, sans-serif;
+}
