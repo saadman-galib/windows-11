@@ -115,7 +115,8 @@ body{
     width: 630px;
     height: 653px;
     background: rgba(246,246,246,0.8);
-    backdrop-filter: saturate(180%) blur(100px);    
+    backdrop-filter: saturate(180%) blur(100px);
+    -webkit-backdrop-filter: saturate(180%) blur(100px); 
     border: none;
     border-radius: 8px;
     position: absolute;
@@ -228,6 +229,7 @@ body{
     width: 630px;
     background-color: #D7DEF1;
     backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(100px);
     height: 62px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
