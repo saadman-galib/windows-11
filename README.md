@@ -16,7 +16,7 @@
 
 ### Built With
 
-- [HTMl](#built-with)
+- [HTML](#built-with)
 - [CSS](#built-with)
 - [JavaScript](#built-with)
 
