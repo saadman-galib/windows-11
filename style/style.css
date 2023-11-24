@@ -1,17 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-image: url('../assets/images/wallpaper.jpg');
-    background-size: center cover;
-    background-repeat: no-repeat;
+body {
+    background: url("../assets/images/wallpaper.jpg") center/cover no-repeat;
     overflow: hidden;
 }
 
-.taskbar{
+.taskbar {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -20,66 +18,65 @@ body{
     background-color: #f3f3f3;
     padding: 8px 0;
     z-index: 225;
-
 }
 
-.taskbar img{
+.taskbar img {
     width: 30px;
     margin: 0 8.8px;
 }
 
-.taskbar img:active{
-    transform: scale(0.80);
+.taskbar img:active {
+    transform: scale(0.8);
     transition: 0.1s ease-in-out;
 }
 
-#taskbar-img-1{
+#taskbar-img-1 {
     width: 32px;
 }
 
-#taskbar-img-2{
+#taskbar-img-2 {
     transform: rotate(90deg);
     width: 26px;
     height: 26px;
     margin-top: 5px;
 }
 
-#taskbar-img-2:active{
-    transform: rotate(90deg) scale(0.80);
+#taskbar-img-2:active {
+    transform: rotate(90deg) scale(0.8);
     transition: 0.1s ease-in-out;
 }
 
-.taskbar img:nth-child(4){
+.taskbar img:nth-child(4) {
     width: 24px;
     height: 22px;
     margin-top: 8px;
 }
 
-.taskbar img:nth-child(5){
+.taskbar img:nth-child(5) {
     margin-top: 4px;
     width: 32px;
     height: 32px;
 }
 
-.taskbar img:nth-child(6){
+.taskbar img:nth-child(6) {
     width: 24px;
     height: 24px;
     margin-top: 6px;
 }
 
-.taskbar img:nth-child(7){
+.taskbar img:nth-child(7) {
     width: 25px;
     height: 25px;
     margin-top: 6px;
 }
 
-.taskbar img:nth-child(8){
+.taskbar img:nth-child(8) {
     width: 24px;
     height: 24px;
     margin-top: 6px;
 }
 
-.taskbar-right img{
+.taskbar-right img {
     position: absolute;
     right: 0;
     display: flex;
@@ -89,14 +86,14 @@ body{
     transform: none !important;
 }
 
-.taskbar-right img:nth-child(1){
+.taskbar-right img:nth-child(1) {
     margin-right: 58px;
     top: 0;
     padding: 0;
     margin-top: 2px;
 }
 
-.taskbar-right img:nth-child(2){
+.taskbar-right img:nth-child(2) {
     right: 0;
     top: 0;
     margin-top: 2px;
@@ -104,19 +101,19 @@ body{
     margin-right: 0 !important;
 }
 
-#startmenu-container{
+#startmenu-container {
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
 }
 
-.startmenu{
+.startmenu {
     width: 630px;
     height: 653px;
-    background: rgba(246,246,246,0.8);
+    background: rgba(246, 246, 246, 0.8);
     backdrop-filter: saturate(180%) blur(100px);
-    -webkit-backdrop-filter: saturate(180%) blur(100px); 
+    -webkit-backdrop-filter: saturate(180%) blur(100px);
     border: none;
     border-radius: 8px;
     position: absolute;
@@ -125,7 +122,7 @@ body{
     transition: all 0.4s ease-in;
 }
 
-.startmenu-left-p{
+.startmenu-left-p {
     padding: 45px 62px;
     float: left;
     font-weight: 700;
@@ -134,29 +131,28 @@ body{
     font-size: 12px;
 }
 
-.startmenu-right{
+.startmenu-right {
     margin: 45px 62px;
     float: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     border: none;
     border-radius: 4px;
-    background-color: #FCFCFC;
-    box-shadow: 0 0 1px 1.2px #D9d9D9;
+    background-color: #fcfcfc;
+    box-shadow: 0 0 1px 1.2px #d9d9d9;
     padding: 2px 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
-.startmenu-right-i{
+.startmenu-right-i {
     margin-left: 11px;
     font-weight: light;
     color: #777;
 }
 
-.app-container{
+.app-container {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-row: 3;
@@ -170,29 +166,27 @@ body{
     grid-template-columns: repeat(6, 1fr);
 }
 
-.app{
+.app {
     text-align: center;
     padding-bottom: 15px;
-    
 }
 
-.app img{
+.app img {
     width: 35px;
     height: 35px;
     margin-bottom: 2px;
-
 }
 
-.app p{
+.app p {
     font-size: 12px;
 }
 
-.recommended-heading{
+.recommended-heading {
     margin-top: 320px;
 }
 
-.recommended-container{
-    padding-top:90px;
+.recommended-container {
+    padding-top: 90px;
     position: absolute;
     width: 630px;
     left: 0;
@@ -202,44 +196,42 @@ body{
     font-weight: 400;
 }
 
-.recommend img{
+.recommend img {
     float: left;
     margin: 0 15px 0 65px;
 }
 
 .recommend:nth-child(2) img,
 .recommend:nth-child(4) img,
-.recommend:nth-child(6) img{
+.recommend:nth-child(6) img {
     margin-left: 35px;
 }
 
-
-.recommend-text{
-    display:flex;
+.recommend-text {
+    display: flex;
     flex-direction: column;
     float: left;
 }
-.recommend-text p{
+.recommend-text p {
     text-align: left;
 }
 
-.user-container{
+.user-container {
     margin-top: 269px;
     position: absolute;
     width: 630px;
-    background-color: #D7DEF1;
+    background-color: #d7def1;
     backdrop-filter: saturate(180%) blur(10px);
     -webkit-backdrop-filter: saturate(180%) blur(100px);
     height: 62px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    
 }
 
-.user-icon img{
-    border:none;
+.user-icon img {
+    border: none;
     border-radius: 100%;
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
     padding: 5px;
     width: 35px;
     height: 35px;
@@ -247,21 +239,20 @@ body{
     margin-left: 55px;
 }
 
-.shutdown img{
+.shutdown img {
     width: 15px;
     height: 15px;
     margin-right: 59px;
     margin-top: 5px;
 }
 
-
-.shutdown{
+.shutdown {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
 }
 
-.user-information{
+.user-information {
     float: left;
     width: 100%;
     display: flex;
@@ -269,9 +260,9 @@ body{
     align-items: center;
 }
 
-.user-information p{
+.user-information p {
     font-size: 12px;
-    letter-spacing: .3px;
+    letter-spacing: 0.3px;
     margin-left: 10px;
     margin-top: 10px;
     font-family: Helvetica, sans-serif;
